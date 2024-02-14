@@ -7,9 +7,6 @@ body {
   background-color: azure;
 }
 
-/* .top-pane {
-  background-color: hsl(222, 61%, 74%);
-} */
 .navbar {
   display: flex;
   align-items: center;
@@ -69,8 +66,7 @@ body {
 
 .CodeMirror {
   height: 100% !important;
-  /* width: 24vw;
-  background-color: azure; */
+
 }
 
 .CodeMirror-scroll {
@@ -78,8 +74,8 @@ body {
   border-right-color: black;
   color: black;
   border-left: 1px solid rgba(218, 218, 218, 0.5);
-  /* width: 25vw; */
 }
+  
 
 .code-mirror-wrapper {
   flex-grow: 1;
