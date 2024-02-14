@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: azure;
+}
+
+/* .top-pane {
+  background-color: hsl(222, 61%, 74%);
+} */
+.navbar {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+
+.pane {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid rgba(218, 218, 218, 0.5);
+  border-left: 1px solid rgba(218, 218, 218, 0.5);
+
+  /* background-color: hsl(225, 6%, 25%); */
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  /* color: white; */
+  cursor: pointer;
+}
+
+.editor-title {
+  display: flex;
+  background-color: azure;
+  justify-content: space-between;
+
+  /* background-color: hsl(220, 7%, 82%); */
+  color: rgb(71, 142, 235);
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+  /* width: 24vw;
+  background-color: azure; */
+}
+
+.CodeMirror-scroll {
+  background-color: azure;
+  border-right-color: black;
+  color: black;
+  border-left: 1px solid rgba(218, 218, 218, 0.5);
+  /* width: 25vw; */
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  overflow: hidden;
+  /* background-color: azure; */
+}
